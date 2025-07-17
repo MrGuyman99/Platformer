@@ -21,17 +21,18 @@ A little platformer written with C++, Raylib, and rlmGui!
 
   - Cool movement tech
 
-That's it! The game engine is, at least to my standards, basically finished!!
+That's it! The game engine is, at least to my standards, basically finished!!\
 The only feature missing is a level switching system
 
-**Build Instructions:**
+**Build Instructions:**\
+This project is built with Cmake!\
+To build it from source, download the code, open a new terminal in the folder and run the following commands:\
+`mkdr build`\
+`cd build`\
+`cmake ..`\
+`cmake --build .`
 
-For Linux: 
-Download the folder and run `bash build.bash` into the terminal
-You NEED raylib installed on linux, I'm not sure if it will compile without it
-
-For Mac & Windows:
-🤷‍♂️
+It should just compile! If not check if cmake & raylib are installed
 
 **Made with ❤️ (& Visual Studio Code)**
 
