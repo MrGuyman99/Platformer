@@ -49,7 +49,7 @@ void DwarfMan::Animate(Texture2D Texture, int FrameSpeed, int Num_Frames, int St
     if(Collided_R == true || Collided_L == true){CurrentFramePos = 0;}
 
     Rectangle SourcePos = {(float)StartPos + CurrentFramePos, 0, 30.0f, 39};
-    DrawTextureRec(Texture, SourcePos, (Vector2){Position.x, Position.y + 5}, WHITE);
+    DrawTextureRec(Texture, SourcePos, {Position.x, Position.y + 5}, WHITE);
 
 }
 
@@ -76,14 +76,14 @@ void DwarfMan::Draw(){
     //Jump "animations"
     else if(velocity.y != 0 && WasMoving == "Right"){
         
-        DrawTextureRec(JumpTexture, (Rectangle){0, 0, 40, 44}, Position, WHITE);
+        DrawTextureRec(JumpTexture, {0, 0, 40, 44}, Position, WHITE);
         CurrentFramePos = 0;
 
     }
     
     else if(velocity.y != 0 && WasMoving == "Left"){
         
-        DrawTextureRec(JumpTexture, (Rectangle){40, 0, 40, 44}, Position, WHITE);
+        DrawTextureRec(JumpTexture, {40, 0, 40, 44}, Position, WHITE);
         CurrentFramePos = 0;
 
     }
